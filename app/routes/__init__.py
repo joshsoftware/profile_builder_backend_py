@@ -1,0 +1,1 @@
+from .resume import resume_blueprint
