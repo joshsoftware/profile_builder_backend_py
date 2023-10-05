@@ -15,6 +15,16 @@ Clone the repository:
 git clone git@github.com:poojan-2601/profile_builder_backend.git
 ```
 
+Setup virtaul environment:
+```
+python -m venv venv
+```
+
+Activate the virtual environment:
+```
+venv\Scripts\activate
+```
+
 Go to root folder and install requirements.txt
 ```
 pip install -r requirements.txt
@@ -62,7 +72,7 @@ step 4: Migrate db
 
 Set flask app in terminal
 ```
-export FLASK_APP=run.py
+set FLASK_APP=run.py
 ```
 
 Migrate and upgrade db
