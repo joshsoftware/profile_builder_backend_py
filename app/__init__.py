@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 from flask_migrate import Migrate
+from flask_cors import CORS
 from .models import db
 from .routes import *
 from config import application_configurations
@@ -13,6 +14,7 @@ def create_app():
     """
     app = Flask(__name__)
     app.config.from_object(application_configurations[os.getenv("FLASK_ENV")])
+    CORS(app)
     db.init_app(app)
     db.app = app
     migrate.init_app(app, db)
