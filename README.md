@@ -22,7 +22,7 @@ python -m venv venv
 
 Activate the virtual environment:
 ```
-venv\Scripts\activate
+source venv/bin/activate
 ```
 
 Go to root folder and install requirements.txt
