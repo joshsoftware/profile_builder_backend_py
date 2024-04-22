@@ -72,7 +72,7 @@ step 4: Migrate db
 
 Set flask app in terminal
 ```
-set FLASK_APP=run.py
+export FLASK_APP=run.py
 ```
 
 Migrate and upgrade db
