@@ -22,7 +22,7 @@ python -m venv venv
 
 Activate the virtual environment:
 ```
-venv\Scripts\activate
+source venv/bin/activate
 ```
 
 Go to root folder and install requirements.txt
@@ -72,7 +72,7 @@ step 4: Migrate db
 
 Set flask app in terminal
 ```
-set FLASK_APP=run.py
+export FLASK_APP=run.py
 ```
 
 Migrate and upgrade db
